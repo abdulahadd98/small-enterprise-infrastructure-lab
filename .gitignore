@@ -1,0 +1,42 @@
+# VMware / virtualization
+*.vmdk
+*.vmem
+*.vmss
+*.vmsn
+*.nvram
+*.vmx~
+*.lck
+
+# Installation media
+*.iso
+
+# Credentials / secrets
+*.key
+*.pem
+*.pfx
+*.p12
+*.kdbx
+*.ccache
+krb5cc_*
+*.ticket
+credentials*
+passwords*
+secrets*
+
+# Logs / reports that may contain environment details
+*.log
+GPReport.html
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+*.swp
+*.tmp
+~$*
+
+# Archives / backups
+*.bak
+*.zip
+*.7z
+*.tar
+*.gz
