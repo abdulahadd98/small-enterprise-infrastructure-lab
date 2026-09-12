@@ -1,0 +1,13 @@
+# LINUX01 static IPv4 configuration used in the lab
+sudo nmcli connection modify "Wired connection 1" ipv4.addresses 192.168.207.20/24
+sudo nmcli connection modify "Wired connection 1" ipv4.gateway 192.168.207.2
+sudo nmcli connection modify "Wired connection 1" ipv4.dns 192.168.207.10
+sudo nmcli connection modify "Wired connection 1" ipv4.method manual
+sudo nmcli connection down "Wired connection 1"
+sudo nmcli connection up "Wired connection 1"
+
+# Verification
+ip addr
+ip route
+cat /etc/resolv.conf
+ping -c 4 dc01.corp.local
